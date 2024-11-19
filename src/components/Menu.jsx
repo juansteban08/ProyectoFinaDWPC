@@ -4,6 +4,7 @@ import MenuDetails from "./MenuDetails.jsx";
 
 const menuData = {
   ensaladas: {
+    image: "images/quinoa_oriental.jpg",
     title: "Ensaladas",
     description: "Disfruta de una variedad de ensaladas frescas y saludables.",
     items: ["Ensalada César", "Ensalada Griega", "Ensalada Detox"],
@@ -32,7 +33,7 @@ const Menu = () => {
   };
 
   return (
-    <div className="menu">
+    <section id="menu" className="menu">
       <h2>Nuestro Menú</h2>
       <div className="menu-items">
         {Object.keys(menuData).map((key) => (
@@ -53,7 +54,7 @@ const Menu = () => {
           onClose={handleCloseDetails}
         />
       )}
-    </div>
+    </section>
   );
 };
 

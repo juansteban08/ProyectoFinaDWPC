@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
 import About from './components/About';
-import AboutDetails from './components/AboutDetails';import Contact from './components/Contact';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Tips from './components/Tips';
 
@@ -28,8 +28,6 @@ function App() {
                 />
                 {/* Ruta para la sección de tips */}
                 <Route path="/tips" element={<Tips />} />
-                {/* Ruta para la página completa de Sobre Nosotros */}
-                <Route path="/about" element={<AboutDetails />} />
             </Routes>
             <Footer />
         </Router>

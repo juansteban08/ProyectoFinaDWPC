@@ -16,8 +16,10 @@
 .tips-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
     gap: 20px;
+    max-width: 1200px; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
 }
 
 /* Tarjetas individuales */
@@ -47,4 +49,49 @@
 .tip-card p {
     font-size: 1rem;
     color: #555;
+}
+
+/* Media Queries */
+
+/* Pantallas pequeñas (tablets en orientación vertical y móviles grandes) */
+@media (max-width: 768px) {
+    .tips-section {
+        padding: 30px 10px;
+    }
+
+    .tips-container {
+        gap: 15px;
+    }
+
+    .tip-card {
+        max-width: 90%; /* Reduce el ancho para que se ajuste mejor */
+        margin: 0 auto;
+    }
+
+    .tip-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .tip-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .tips-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .tip-card {
+        padding: 15px;
+    }
+
+    .tip-card h3 {
+        font-size: 1rem;
+    }
+
+    .tip-card p {
+        font-size: 0.8rem;
+    }
 }
