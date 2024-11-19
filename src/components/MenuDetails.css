@@ -1,0 +1,81 @@
+/* Fondo oscuro translúcido detrás de la carta */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Asegura que esté encima de todo */
+}
+
+/* Estilo de la carta */
+.menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    position: relative; /* Para posicionar la "X" */
+    text-align: center;
+    animation: fadeIn 0.3s ease; /* Efecto de aparición */
+}
+
+/* Imagen dentro de la carta */
+.menu-card-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botón de cierre ("X") */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #f00; /* Color rojo al pasar el mouse */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.benefits-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.benefits-link:hover {
+    background-color: #0056b3;
+}
+
+

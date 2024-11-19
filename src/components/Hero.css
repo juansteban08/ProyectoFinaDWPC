@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slideAnimation 12s infinite;
+}
+
+.hero .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes slideAnimation {
+    0%, 33% {
+        transform: translateX(0%);
+    }
+    50%, 66% {
+        transform: translateX(-100%);
+    }
+    83%, 100% {
+        transform: translateX(-200%);
+    }
+}
+
+.hero-content {
+    position: absolute;
+    right: 10%; /* Mueve el contenido hacia la derecha */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Asegura el centrado */
+    text-align: right; /* Alinea el texto hacia la derecha */
+    z-index: 10;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Degradado negro hacia transparente */
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Tamaño grande para resaltar */
+    font-weight: bold;
+    background-image: linear-gradient(to right, #f39c12, #8e44ad); /* Degradado en el texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+    opacity: 0.9; /* Texto más suave */
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22; /* Color más oscuro al pasar el cursor */
+}

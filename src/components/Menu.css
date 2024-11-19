@@ -1,0 +1,38 @@
+.menu {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-card {
+    width: 200px;
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+    background: #f39c12;
+    color: white;
+  }
+  
+  .menu-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .menu-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
