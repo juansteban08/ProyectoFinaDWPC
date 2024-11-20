@@ -7,19 +7,15 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Tips from './components/Tips';
-import Home from "./components/Home"; // Tu página principal
-import { AuthProvider } from "./components/AuthContext";
+
 
 function App() {
     return (
-        <AuthProvider>
             <Router>
 
                 {/* Siempre presente: Header y Footer */}
                 <Header />
                 <Routes>
-
-                    <Route path="/" element={<Home />} />
 
                 {/* Ruta principal con todas las secciones */}
                 <Route 
@@ -39,7 +35,6 @@ function App() {
             <Footer />
         </Router>
 
-        </AuthProvider>
     );
 }
 
